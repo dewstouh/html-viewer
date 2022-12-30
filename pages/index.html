@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Introducir URL</title>
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #242424;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .center {
+            margin: auto;
+            width: 60%;
+        }
+
+        .container {
+            max-width: 500px;
+            /* Establece un ancho máximo para el contenedor */
+            margin: 0 auto;
+            /* Centra el contenedor horizontalmente */
+            text-align: center;
+            /* Centra el contenido del contenedor horizontalmente */
+            position: absolute;
+            /* Posiciona el contenedor de manera absoluta */
+            top: 50%;
+            /* Sitúa el contenedor a la mitad de la pantalla */
+            left: 50%;
+            /* Sitúa el contenedor a la mitad de la pantalla */
+            transform: translate(-50%, -50%);
+            /* Desplaza el contenedor hacia arriba y hacia la izquierda */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #d1d1d1;
+            border: none;
+            overflow: auto;
+            outline: none;
+
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+
+            resize: none;
+
+            transition: all 0.3s;
+            /*remove the resize handle on the bottom right*/
+        }
+
+        input[type="text"]:focus {
+            outline: 1px solid aqua;
+            box-shadow: 0px 0px 10px 0px rgba(0, 217, 255, 1);
+            /* Cambia el color del borde al obtener el foco */
+        }
+
+        button[type="submit"] {
+            width: 30%;
+            background-color: #00ffea;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0098ac;
+        }
+
+        footer {
+            position: fixed;
+            margin-bottom: 10px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: rgb(137, 137, 137);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Introduce una URL</h1>
+        <form action="/html" method="GET">
+            <input type="text" name="url" placeholder="URL">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        ©️ El Mundo de Niby, dewstouh
+    </footer>
+</body>
+
+</html>
